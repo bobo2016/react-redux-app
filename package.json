@@ -33,7 +33,7 @@
   "contributors": [
     "Valentina Pegler <valentina@leinwand.cc> (https://github.com/VLNTNA)"
   ],
-  "license": "UNLICENSED",
+  "license": "BSD-3-Clause",
   "private": true,
   "bugs": {
     "url": "https://github.com/miclaus/create-react-redux-app/issues"
