@@ -31,9 +31,11 @@ npm start
 ### DevTools
 
 Install the Redux developer tools Chrome extension – it's extremely useful:
+
 https://chrome.google.com/webstore/detail/redux-devtools
 
 You might also find Facebooks React Chrome extension helpful:
+
 https://chrome.google.com/webstore/detail/react-developer-tools
 
 
