@@ -9,7 +9,7 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 * [ ] React Router
 * [x] Webpack
   * [x] Babel (react, es2015, stage-2)
-  * [x] SASS (style, css, sass)
+  * [x] SASS
   * [x] Watcher
   * [ ] Hot reloading
 * [x] Express server
