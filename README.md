@@ -80,4 +80,6 @@ The `vendors/` folder contains 3rd-party libraries and frameworks such as:
 * `wysiwyg-editor.scss`
 
 
-Humbly presented by [LEINWAND](https://github.com/leinwand)
+## Licence
+
+UNLICENCED
