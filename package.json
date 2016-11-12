@@ -9,6 +9,7 @@
     "build-watch": "./node_modules/webpack/bin/webpack.js --colors --watch",
     "build-watch-progress": "./node_modules/webpack/bin/webpack.js --progress --colors --watch",
     "start": "concurrently --kill-others \"npm run build-watch\" \"npm run serve\"",
+    "hot": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +17,17 @@
     "url": "git+https://miclaus@github.com/miclaus/create-react-redux-app.git"
   },
   "keywords": [
-    "create-react-redux-app"
+    "react",
+    "redux", 
+    "react-router",
+    "redux-devtools",
+    "webpack",
+    "hrm",
+    "hot",
+    "es6",
+    "babel",
+    "sass",
+    "flow"
   ],
   "author": "Iosif Miclaus <iosif@leinwand.cc> (https://github.com/miclaus)",
   "contributors": [
@@ -50,8 +61,10 @@
     "css-loader": "^0.25.0",
     "flow-bin": "^0.34.0",
     "node-sass": "^3.11.2",
+    "react-hot-loader": "^3.0.0-beta.6",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   }
 }

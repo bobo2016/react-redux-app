@@ -8,8 +8,9 @@ import { exampleAction } from '../actions/main'
 
 import type { Dispatch } from '../actions/types'
 
+import Button from '../components/Button'
+
 require('../stylesheets/containers/App.scss')
-require('../stylesheets/components/Button.scss')
 
 
 type Props = {
@@ -54,11 +55,14 @@ class App extends Component {
     return (
       <div id="App">
         <h1>Welcome to your awesome react-redux app !</h1>
-        <p>Humbly presented by <a href="https://github.com/leinwand" target="_blank">LEINWAND</a></p>
 
-        <button
+        <Button
           onClick={this.handleExampleAction}
-        >Example Action ({this.props.id})</button>
+          id={this.props.id}
+        />
+
+        <p>&nbsp;</p>
+        <p>Humbly presented by <a href="https://github.com/leinwand" target="_blank">LEINWAND</a></p>
       </div>
     )
   }

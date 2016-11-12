@@ -12,6 +12,12 @@ require('./stylesheets/base/general.scss')
 
 const store = configureStore()
 
+
+if (module.hot) {
+  module.hot.accept();
+}
+
+
 render(
   <Provider store={store}>
     <App />
