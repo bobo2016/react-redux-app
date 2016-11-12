@@ -23,10 +23,12 @@ Install project dependencies:
 npm install
 ```
 
-Start app:
+Serve and watch app:
 ```
 npm start
 ```
+
+Open http://localhost:3000 in your browser.
 
 ### DevTools
 
