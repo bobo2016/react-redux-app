@@ -3,18 +3,18 @@
 An opinionated development-ready React-Redux boilerplate that will instantly get you going.
 
 ## Features
-[x] React
-[x] Redux
-[x] Redux DevTools
-[ ] React Router
-[x] Webpack
-  [x] Babel (react, es2015, stage-2)
-  [x] SASS (style, css, sass)
-  [x] Watcher
-  [ ] Hot reloading
-[x] Express server
-[x] .editorconfig
-[x] Flow
+* [x] React
+* [x] Redux
+* [x] Redux DevTools
+* [ ] React Router
+* [x] Webpack
+  * [x] Babel (react, es2015, stage-2)
+  * [x] SASS (style, css, sass)
+  * [x] Watcher
+  * [ ] Hot reloading
+* [x] Express server
+* [x] .editorconfig
+* [x] Flow
 
 
 ## Setup
