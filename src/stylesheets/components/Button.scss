@@ -1,0 +1,18 @@
+@import '../utils/variables';
+
+button {
+  background: $primaryColor;
+  color: #fff;
+  border: 1px solid $primaryColor;
+  height: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background: $primaryColorHover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
