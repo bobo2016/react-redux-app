@@ -86,4 +86,4 @@ The `vendors/` folder contains 3rd-party libraries and frameworks such as:
 
 ## Licence
 
-MIT
+[The BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
