@@ -11,7 +11,7 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
   * [x] Babel (react, es2015, stage-2)
   * [x] SASS
   * [x] Watcher
-  * [ ] Hot reloading
+  * [x] Hot reloading
 * [x] Express server
 * [x] .editorconfig
 * [x] Flow
@@ -86,4 +86,4 @@ The `vendors/` folder contains 3rd-party libraries and frameworks such as:
 
 ## Licence
 
-UNLICENCED
+MIT
