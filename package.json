@@ -1,7 +1,7 @@
 {
   "name": "create-react-redux-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "An opinionated development-ready React-Redux boilerplate that will instantly get you going.",
   "main": "index.html",
   "scripts": {
     "serve": "node server.js",
