@@ -18,21 +18,30 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 
 
 ## Setup
-Install project dependencies:
+
+### Installation
+Simply install the npm project dependencies:
 ```
 npm install
 ```
 
-Serve and watch app:
+### Serve watch
+Serve and watch app _(without hot reloading)_:
 ```
 npm start
 ```
-
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Hot reloading
+This package also enables hot reloading over `webpack-dev-server`. To serve and watch a _hot_ app, run:
+```
+npm run hot
+```
+Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) in your browser.
 
 ### DevTools
 
-Install the Redux developer tools Chrome extension – it's extremely useful:
+Install the Redux developer tools Chrome extension – extremely useful:
 
 https://chrome.google.com/webstore/detail/redux-devtools
 
@@ -86,4 +95,4 @@ The `vendors/` folder contains 3rd-party libraries and frameworks such as:
 
 ## Licence
 
-[The BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
+[The BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause) (BSD-3-Clause)
