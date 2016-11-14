@@ -10,6 +10,7 @@ import { exampleAction } from '../actions/main'
 import type { Dispatch } from '../actions/types'
 
 import Credits from '../components/Credits'
+import ImageExample from '../components/ImageExample'
 
 require('../stylesheets/containers/NoMatch.scss')
 
@@ -55,6 +56,8 @@ class NoMatch extends Component {
     return (
       <div id="NoMatch">
         <h1>404: Whups, how did you get here ?!</h1>
+
+        <ImageExample />
 
         <p><Link to="/">&lt; Go back</Link></p>
 
