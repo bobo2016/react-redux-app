@@ -43,7 +43,7 @@ class Credits extends Component {
   render() {
     return (
       <div className="Credits">
-        <span>Humbly presented by <a href="https://github.com/leinwand" target="_blank">LEINWAND</a></span>
+        <span>Modestly presented by <a href="https://github.com/leinwand" target="_blank">LEINWAND</a></span>
       </div>
     )
   }
