@@ -7,6 +7,7 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 * [x] Redux
 * [x] Redux DevTools
 * [ ] React Router
+* [ ] Axios
 * [x] Webpack
   * [x] Babel (react, es2015, stage-2)
   * [x] SASS
