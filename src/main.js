@@ -16,11 +16,11 @@ require('./stylesheets/utils/helpers.scss')
 
 const store = configureStore()
 
-// NOTE: hot reloading routes is not possible yet !
 // Create an enhanced history that syncs navigation events with the store
 const history = syncHistoryWithStore(browserHistory, store)
 
 
+// NOTE: hot reloading routes are not possible yet !
 // if (module.hot) {
 //   (module.hot: any).accept()
 // }
