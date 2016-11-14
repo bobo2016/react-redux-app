@@ -7,6 +7,8 @@ button {
   height: 30px;
   border-radius: 15px;
   cursor: pointer;
+  font: 0.8rem CenturyGothic, "Helvetica Neue", Helvetica, sans-serif;
+  padding-top: 2px;
 
   &:hover {
     background: $primaryColorHover;

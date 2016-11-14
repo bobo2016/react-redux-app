@@ -6,16 +6,18 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 * [x] React
 * [x] Redux
 * [x] Redux DevTools
-* [ ] React Router
-* [ ] Axios
+* [x] React Router
+* [x] axios
 * [x] Webpack
   * [x] Babel (react, es2015, stage-2)
   * [x] SASS
   * [x] Watcher
-  * [x] Hot reloading
+  * [ ] Hot reloading ( not supported **yet** ! )
+* [x] Flow
 * [x] Express server
 * [x] .editorconfig
-* [x] Flow
+* [x] Custom fonts
+
 
 
 ## Setup
@@ -33,7 +35,7 @@ npm start
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Hot reloading
+### Hot reloading ( not supported yet ! )
 This package also enables hot reloading over `webpack-dev-server`. To serve and watch a _hot_ app, run:
 ```
 npm run hot

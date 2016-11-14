@@ -1,8 +1,5 @@
 @import '../utils/variables';
-
-// * {
-//   box-sizing: border-box;
-// }
+@import '../base/typography';
 
 html, body {
   margin: 0;
@@ -18,7 +15,7 @@ html, body {
   overflow: hidden;
 
   background: #eee;
-  font: 16px "Helvetica Neue", Helvetica, sans-serif;
+  font: 16px CenturyGothic, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 a {

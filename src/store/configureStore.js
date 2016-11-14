@@ -25,14 +25,14 @@ export default function configureStore(state: ?Object = initialState): Object {
   )
 
   // NOTE: https://github.com/reactjs/react-redux/releases/tag/v2.0.0
-  if (module.hot) {
-    // Enable Webpack hot module replacement for reducers
-    module.hot.accept('../reducers', () => {
-      // const nextRootReducer = require('../reducers/index');
-      // store.replaceReducer(nextRootReducer);
-      store.replaceReducer(reducers);
-    });
-  }
+  // if (module.hot) {
+  //   // Enable Webpack hot module replacement for reducers
+  //   (module.hot: any).accept('../reducers', () => {
+  //     // const nextRootReducer = require('../reducers/index');
+  //     // store.replaceReducer(nextRootReducer);
+  //     store.replaceReducer(reducers);
+  //   });
+  // }
 
   return store
 }

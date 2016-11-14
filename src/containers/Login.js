@@ -3,14 +3,15 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router'
 
 import { exampleAction } from '../actions/main'
 
 import type { Dispatch } from '../actions/types'
 
-import Button from '../components/Button'
+import Credits from '../components/Credits'
 
-require('../stylesheets/containers/App.scss')
+require('../stylesheets/containers/Login.scss')
 
 
 type Props = {
@@ -24,7 +25,7 @@ type State = {
 }
 
 
-class App extends Component {
+class Login extends Component {
   props: Props
   state: State
 
@@ -33,8 +34,8 @@ class App extends Component {
 
     // this.state = {}
 
-    const App = (this: any)
-    App.handleExampleAction = this.handleExampleAction.bind(this)
+    const Login = (this: any)
+    Login.handleExampleAction = this.handleExampleAction.bind(this)
   }
 
   /* Component Lifecycle */
@@ -53,16 +54,14 @@ class App extends Component {
 
   render() {
     return (
-      <div id="App">
-        <h1>Welcome to your awesome react-redux app !</h1>
+      <div id="Login">
+        <h1>Login</h1>
 
-        <Button
-          onClick={this.handleExampleAction}
-          id={this.props.id}
-        />
+        <p className="link"><Link to="/">🏡</Link></p>
 
-        <p>&nbsp;</p>
-        <p>Humbly presented by <a href="https://github.com/leinwand" target="_blank">LEINWAND</a></p>
+        <p>Member area</p>
+
+        <Credits />
       </div>
     )
   }
@@ -78,7 +77,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state: Object, router: Object) => {
-  // console.log('App mapStateToProps:');
+  // console.log('Login mapStateToProps:');
   // console.log('  state: ', state);
   // console.log('  router: ', router);
 
@@ -90,4 +89,4 @@ const mapStateToProps = (state: Object, router: Object) => {
 export default connect(
   mapStateToProps
   // mapDispatchToProps
-)(App)
+)(Login)
