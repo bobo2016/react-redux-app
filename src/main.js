@@ -26,26 +26,13 @@ const history = syncHistoryWithStore(browserHistory, store)
 // }
 
 
-// const routes = {
-//   path: '/',
-//   component: App,
-//   childRoutes: [
-//     { path: '*', component: NoMatch}
-//   ]
-// }
-
-const renderAll = () => {
-  render(
-    <Provider store={store}>
-      <Router history={history}>
-        <Route path="/" component={Home} />
-        <Route path="login" component={Login} />
-        <Route path="*" component={NoMatch} />
-      </Router>
-    </Provider>,
-    document.getElementById('leinwand')
-  )
-}
-
-store.subscribe(renderAll)
-renderAll()
+render(
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path="/" component={Home} />
+      <Route path="login" component={Login} />
+      <Route path="*" component={NoMatch} />
+    </Router>
+  </Provider>,
+  document.getElementById('leinwand')
+)
