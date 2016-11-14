@@ -59,7 +59,7 @@ class NoMatch extends Component {
 
         <ImageExample />
 
-        <p><Link to="/">&lt; Go back</Link></p>
+        <p><Link to="/">Go back</Link></p>
 
         <Credits />
       </div>
