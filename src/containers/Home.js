@@ -42,7 +42,7 @@ class Home extends Component {
   /* Component Lifecycle */
 
   /// Mounting
-  componentWillMount() {}
+  // componentWillMount() {}
   // componentDidMount() {}
   // componentWillUnmount() {}
 
