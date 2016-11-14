@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react'
 
-require('../stylesheets/components/Button.scss')
+require('../stylesheets/components/ExampleButton.scss')
 
 
 type Props = {
@@ -16,7 +16,7 @@ type State = {
 }
 
 
-class Button extends Component {
+class ExampleButton extends Component {
   props: Props
   state: State
 
@@ -25,8 +25,8 @@ class Button extends Component {
 
     // this.state = {}
 
-    // const Button = (this: any)
-    // Button.eventHandler = this.eventHandler.bind(this)
+    // const ExampleButton = (this: any)
+    // ExampleButton.eventHandler = this.eventHandler.bind(this)
   }
 
   /// Mounting
@@ -52,4 +52,4 @@ class Button extends Component {
   // ...
 }
 
-export default Button
+export default ExampleButton

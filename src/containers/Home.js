@@ -10,7 +10,7 @@ import { exampleAction } from '../actions/main'
 import type { Dispatch } from '../actions/types'
 
 import Credits from '../components/Credits'
-import Button from '../components/Button'
+import ExampleButton from '../components/ExampleButton'
 
 require('../stylesheets/containers/Home.scss')
 
@@ -58,7 +58,7 @@ class Home extends Component {
       <div id="Home">
         <h1>Welcome to your awesome react-redux app !</h1>
 
-        <Button
+        <ExampleButton
           onClick={this.handleExampleAction}
           id={this.props.id}
         />
