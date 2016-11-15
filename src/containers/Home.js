@@ -42,7 +42,7 @@ class Home extends Component {
   /* Component Lifecycle */
 
   /// Mounting
-  componentWillMount() {}
+  // componentWillMount() {}
   // componentDidMount() {}
   // componentWillUnmount() {}
 
@@ -82,10 +82,6 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state: Object, router: Object) => {
-  // console.log('Home mapStateToProps:');
-  // console.log('  state: ', state);
-  // console.log('  router: ', router);
-
   return {
     id: state.main.id,
   }
@@ -93,5 +89,4 @@ const mapStateToProps = (state: Object, router: Object) => {
 
 export default connect(
   mapStateToProps
-  // mapDispatchToProps
 )(Home)

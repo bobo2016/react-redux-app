@@ -44,13 +44,17 @@ Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-d
 
 ### DevTools
 
-Install the Redux developer tools Chrome extension – extremely useful:
+Install the Redux developer tools Chrome and Firefox extension – extremely useful:
 
-https://chrome.google.com/webstore/detail/redux-devtools
+**Official repository**: https://github.com/zalmoxisus/redux-devtools-extension
+
+**Chrome extension**: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+**Firefox extension**: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
 
 You might also find Facebooks React Chrome extension helpful:
 
-https://chrome.google.com/webstore/detail/react-developer-tools
+https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 
 
 ## Styling
