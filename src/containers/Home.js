@@ -77,7 +77,9 @@ class Home extends Component {
   handleExampleAction() {
     const { dispatch, id } = this.props
 
-    dispatch( exampleAction(id) )
+    const newId = id + 1
+
+    dispatch( exampleAction(newId) )
   }
 }
 

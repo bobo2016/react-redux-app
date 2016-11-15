@@ -12,3 +12,12 @@ export function exampleAction(id: number): Action {
     }
   }
 }
+
+export function colorAction(color: string): Action {
+  return {
+    type: 'COLOR_ACTION',
+    payload: {
+      color
+    }
+  }
+}

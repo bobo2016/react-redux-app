@@ -6,11 +6,13 @@ import type { Action } from '../actions/types'
 
 type State = {
   id: number,
+  color: string,
 }
 
 
 const initialState: State = {
   id: 0,
+  color: '#0f0',
 }
 
 
@@ -21,17 +23,25 @@ export default function mainReducer(
     case 'EXAMPLE_ACTION':
       return exampleAction(state, action)
 
+    case 'COLOR_ACTION':
+      return colorAction(state, action)
+
     default:
       return state
   }
 }
 
 
-/// mainReducers
-
-function exampleAction(state: State, action: Action): State {
+function exampleAction(state, action) {
   return {
     ...state,
-    id: action.payload.id + 1,
+    id: action.payload.id,
+  }
+}
+
+function colorAction(state, action) {
+  return {
+    ...state,
+    color: action.payload.color,
   }
 }
