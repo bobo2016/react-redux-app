@@ -1,6 +1,6 @@
 {
   "name": "react-redux-app",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "An opinionated development-ready React-Redux boilerplate that will instantly get you going.",
   "main": "index.html",
   "scripts": {
@@ -48,7 +48,6 @@
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
-    "redux-persist": "^4.0.0-alpha7",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0"
   },
