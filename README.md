@@ -22,14 +22,35 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 
 ## Setup
 
-### Installation
+### Download
+You can either download the latest release `.zip` and simply unzip it in your project directory.
+
+**or**
+
+Clone from git and rename directory to your app name.
+```
+git clone https://github.com/LEINWAND/create-react-redux-app awesome-app
+```
+
+**or**
+
+Alternatively, you can install w/ `npm` and copy the module from `node_modules/`. In this case you'll need to rename `.npmignore` to `.gitignore` after copying.
+
+```
+mkdir awesome-app; cd awesome-app
+npm install react-redux-app
+cp -Rv node_modules/react-redux-app/. .
+mv .npmignore .gitignore
+```
+
+### Install dependencies
 Simply install the npm project dependencies:
 ```
 npm install
 ```
 
-### Serve watch
-Serve and watch app _(without hot reloading)_:
+### Serve & watch
+Serve and watch app _( without hot reloading )_:
 ```
 npm start
 ```
