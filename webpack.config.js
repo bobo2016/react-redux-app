@@ -1,12 +1,21 @@
-var webpack = require('webpack');
-// var path = require('path');
+var webpack = require('webpack')
+var CleanWebpackPlugin = require('clean-webpack-plugin');
+// var path = require('path')
 
-module.exports = {
-  entry: [
+var isProduction = process.env.NODE_ENV === 'production'
+
+
+function entry() {
+  return isProduction ? './src/main.js' : [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './src/main.js',
-  ],
+  ]
+}
+
+
+module.exports = {
+  entry: entry(),
 
   output: {
     path: __dirname + '/lib',
@@ -31,12 +40,18 @@ module.exports = {
   },
 
   // resolve: {
-  //   extensions: ['', '.js', '.jsx']
+  //   extensions: ['', '.js', '.jsx'],
   // },
 
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     // new webpack.NoErrorsPlugin(),
+    new CleanWebpackPlugin(['lib'], {
+      // root: __dirname,
+      // verbose: true,
+      // dry: false,
+      exclude: ['bundle.js']
+    })
   ],
 
   devServer: {
