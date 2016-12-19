@@ -29,7 +29,7 @@ You can either download the latest release `.zip` and simply unzip it in your pr
 
 Clone from git in a desired project directory.
 ```
-git clone https://github.com/LEINWAND/create-react-redux-app awesome-app
+git clone https://github.com/LEINWAND/react-redux-app awesome-app
 ```
 
 **or**
