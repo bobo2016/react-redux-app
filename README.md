@@ -49,10 +49,10 @@ Simply install the npm project dependencies:
 npm install
 ```
 
-### Serve & watch
+### Serve & watch dev
 Serve and watch app _( without hot reloading )_:
 ```
-npm start
+npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
@@ -62,6 +62,12 @@ This package also enables hot reloading over `webpack-dev-server`. To serve and 
 npm run hot
 ```
 Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) in your browser.
+
+**NOTE**: This package doesn't reload Redux state yet (see #6)
+
+### Other
+
+There are other scripts too, just have a look at `package.json` and use to your benfit.
 
 ### DevTools
 
