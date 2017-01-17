@@ -2,20 +2,14 @@
 'use strict'
 
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import { Link } from 'react-router'
-
-import { exampleAction } from '../actions/main'
-
-import type { Dispatch } from '../actions/types'
 
 import Credits from '../components/Credits'
 import ImageExample from '../components/ImageExample'
 
 
 type Props = {
-  // props from app state
-  dispatch: Dispatch,
+  // props
 }
 
 type State = {
@@ -33,7 +27,7 @@ class NoMatch extends Component {
     // this.state = {}
 
     // const NoMatch = (this: any)
-    // NoMatch.handleExampleAction = this.handleExampleAction.bind(this)
+    // NoMatch.onEvent = this.onEvent.bind(this)
   }
 
   /* Component Lifecycle */
@@ -52,7 +46,7 @@ class NoMatch extends Component {
 
   render() {
     return (
-      <div style={{padding: '1rem'}}>
+      <div style={{ padding: '1rem' }}>
         <h1>404: Whups, how did you get here ?!</h1>
 
         <ImageExample />

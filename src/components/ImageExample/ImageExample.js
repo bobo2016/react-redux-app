@@ -23,7 +23,7 @@ class ImageExample extends Component {
     // this.state = {}
 
     // const ImageExample = (this: any)
-    // ImageExample.eventHandler = this.eventHandler.bind(this)
+    // ImageExample.onEvent = this.onEvent.bind(this)
   }
 
   /// Mounting

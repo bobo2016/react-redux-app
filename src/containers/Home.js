@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import { Link, RouterContext } from 'react-router'
 
 import { exampleAction } from '../actions/main'
 
@@ -14,9 +14,8 @@ import ExampleButton from '../components/ExampleButton'
 
 
 type Props = {
-  // props from app state
-  id: number,
   dispatch: Dispatch,
+  id: number,
 }
 
 type State = {
@@ -34,7 +33,7 @@ class Home extends Component {
     // this.state = {}
 
     const Home = (this: any)
-    Home.handleExampleAction = this.handleExampleAction.bind(this)
+    Home.onExampleAction = this.onExampleAction.bind(this)
   }
 
   /* Component Lifecycle */
@@ -57,8 +56,8 @@ class Home extends Component {
         <h1>Welcome to your awesome react-redux app !</h1>
 
         <ExampleButton
-          onClick={this.handleExampleAction}
           id={this.props.id}
+          onClick={this.onExampleAction}
         />
 
         <p><Link to="login">Login</Link></p>
@@ -72,7 +71,7 @@ class Home extends Component {
 
   /// Event Handlers
 
-  handleExampleAction() {
+  onExampleAction() {
     const { dispatch, id } = this.props
 
     const newId = id + 1
@@ -81,7 +80,7 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = (state: Object, router: Object) => {
+const mapStateToProps = (state: Object, router: RouterContext) => {
   return {
     id: state.main.id,
   }

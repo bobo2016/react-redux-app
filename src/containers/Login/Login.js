@@ -3,7 +3,7 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import { Link, RouterContext } from 'react-router'
 
 import { colorAction } from '../../actions/main'
 
@@ -14,7 +14,6 @@ import Credits from '../../components/Credits'
 
 
 type Props = {
-  // props
   color: string,
   dispatch: Dispatch,
 }
@@ -34,7 +33,7 @@ class Login extends Component {
     // this.state = {}
 
     const Login = (this: any)
-    Login.handleColorAction = this.handleColorAction.bind(this)
+    Login.onColorAction = this.onColorAction.bind(this)
   }
 
   /* Component Lifecycle */
@@ -56,13 +55,13 @@ class Login extends Component {
       <div id="Login">
         <h1>Login</h1>
 
-        <p className="link"><Link to="/">🏡</Link></p>
+        <p><Link to="/">🏡</Link></p>
 
         <p>Member area</p>
 
         <ColorButton
           color={this.props.color}
-          onClick={this.handleColorAction}
+          onClick={this.onColorAction}
         />
 
         <Credits />
@@ -73,8 +72,8 @@ class Login extends Component {
 
   /// Event Handlers
 
-  handleColorAction() {
-    const { dispatch, color } = this.props
+  onColorAction() {
+    const { color, dispatch } = this.props
 
     const newColor = color === '#0f0' ? '#f00' : '#0f0'
 
@@ -82,7 +81,7 @@ class Login extends Component {
   }
 }
 
-const mapStateToProps = (state: Object, router: Object) => {
+const mapStateToProps = (state: Object, router: RouterContext) => {
   return {
     color: state.main.color,
   }

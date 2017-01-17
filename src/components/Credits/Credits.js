@@ -23,7 +23,7 @@ class Credits extends Component {
     // this.state = {}
 
     // const Credits = (this: any)
-    // Credits.eventHandler = this.eventHandler.bind(this)
+    // Credits.onEvent = this.onEvent.bind(this)
   }
 
   /// Mounting
