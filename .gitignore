@@ -6,7 +6,7 @@ Thumbs.db
 node_modules/
 
 ### Webpack
-lib/bundle.js
+lib/
 
 ### Other
 *.log
