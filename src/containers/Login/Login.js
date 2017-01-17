@@ -5,17 +5,17 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
 
-import { exampleAction } from '../actions/main'
+import { colorAction } from '../../actions/main'
 
-import type { Dispatch } from '../actions/types'
+import type { Dispatch } from '../../actions/types'
 
-import Credits from '../components/Credits'
-import ExampleButton from '../components/ExampleButton'
+import ColorButton from '../../components/ColorButton'
+import Credits from '../../components/Credits'
 
 
 type Props = {
-  // props from app state
-  id: number,
+  // props
+  color: string,
   dispatch: Dispatch,
 }
 
@@ -24,7 +24,7 @@ type State = {
 }
 
 
-class Home extends Component {
+class Login extends Component {
   props: Props
   state: State
 
@@ -33,8 +33,8 @@ class Home extends Component {
 
     // this.state = {}
 
-    const Home = (this: any)
-    Home.handleExampleAction = this.handleExampleAction.bind(this)
+    const Login = (this: any)
+    Login.handleColorAction = this.handleColorAction.bind(this)
   }
 
   /* Component Lifecycle */
@@ -53,16 +53,17 @@ class Home extends Component {
 
   render() {
     return (
-      <div style={{ padding: '1rem' }}>
-        <h1>Welcome to your awesome react-redux app !</h1>
+      <div id="Login">
+        <h1>Login</h1>
 
-        <ExampleButton
-          onClick={this.handleExampleAction}
-          id={this.props.id}
+        <p className="link"><Link to="/">🏡</Link></p>
+
+        <p>Member area</p>
+
+        <ColorButton
+          color={this.props.color}
+          onClick={this.handleColorAction}
         />
-
-        <p><Link to="login">Login</Link></p>
-        <p><Link to="/asdf">404 Route</Link></p>
 
         <Credits />
       </div>
@@ -72,21 +73,21 @@ class Home extends Component {
 
   /// Event Handlers
 
-  handleExampleAction() {
-    const { dispatch, id } = this.props
+  handleColorAction() {
+    const { dispatch, color } = this.props
 
-    const newId = id + 1
+    const newColor = color === '#0f0' ? '#f00' : '#0f0'
 
-    dispatch( exampleAction(newId) )
+    dispatch( colorAction(newColor) )
   }
 }
 
 const mapStateToProps = (state: Object, router: Object) => {
   return {
-    id: state.main.id,
+    color: state.main.color,
   }
 }
 
 export default connect(
   mapStateToProps
-)(Home)
+)(Login)

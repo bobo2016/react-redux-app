@@ -12,8 +12,6 @@ import type { Dispatch } from '../actions/types'
 import Credits from '../components/Credits'
 import ImageExample from '../components/ImageExample'
 
-require('../stylesheets/containers/NoMatch.scss')
-
 
 type Props = {
   // props from app state
@@ -54,7 +52,7 @@ class NoMatch extends Component {
 
   render() {
     return (
-      <div id="NoMatch">
+      <div style={{padding: '1rem'}}>
         <h1>404: Whups, how did you get here ?!</h1>
 
         <ImageExample />
