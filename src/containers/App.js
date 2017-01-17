@@ -1,19 +1,16 @@
-import React, { Component } from 'react'
-import { Provider } from 'react-redux'
-import { Router, Route, browserHistory } from 'react-router'
-import { syncHistoryWithStore } from 'react-router-redux'
+/* @flow */
 
-import Home from './Home'
-import Login from './Login'
-import NoMatch from './NoMatch'
+require('../stylesheets/utils/helpers.scss')
+
+import React, { Component } from 'react'
 
 
 type Props = {
-  store: Object,
+  children: Object,
 }
 
 type State = {
-  router: Object,
+  // state
 }
 
 
@@ -24,26 +21,14 @@ class App extends Component {
   constructor(props: Props) {
     super(props)
 
-    // Create an enhanced history that syncs navigation events with the store
-    const history = syncHistoryWithStore(browserHistory, props.store)
+    // this.state = {}
 
-    this.state = {
-      router: (
-        <Router history={history}>
-          <Route path="/" component={Home} />
-          <Route path="login" component={Login} />
-          <Route path="*" component={NoMatch} />
-        </Router>
-      )
-    }
+    // const App = (this: any)
+    // App.onEvent = this.onEvent.bind(this)
   }
 
   render() {
-    return (
-      <Provider store={this.props.store}>
-         {this.state.router}
-      </Provider>
-    )
+    return this.props.children
   }
 }
 
