@@ -10,7 +10,7 @@
     "build-watch": "./node_modules/webpack/bin/webpack.js --colors --watch",
     "build-watch-progress": "./node_modules/webpack/bin/webpack.js --progress --colors --watch",
     "start": "concurrently --kill-others \"npm run build-watch\" \"npm run serve\"",
-    "offline": "concurrently --kill-others \"npm run prod-watch\" \"npm run serve\"",
+    "dev": "npm install; concurrently --kill-others \"npm run prod-watch\" \"npm run serve\"",
     "hot": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
