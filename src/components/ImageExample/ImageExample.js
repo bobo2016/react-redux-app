@@ -41,7 +41,7 @@ class ImageExample extends Component {
   render() {
     return (
       <div className="ImageExample">
-        <img src="assets/images/peacock.jpg" alt="Peacock" title="Peacock" />
+        <img src="assets/images/404.jpg" alt="404" title="404" />
       </div>
     )
   }
