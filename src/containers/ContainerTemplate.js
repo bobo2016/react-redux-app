@@ -3,6 +3,7 @@
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { RouterContext } from 'react-router'
 
 
 type Props = {
@@ -24,7 +25,7 @@ class ContainerTemplate extends Component {
     // this.state = {}
 
     // const ContainerTemplate = (this: any)
-    // ContainerTemplate.eventHandler = this.eventHandler.bind(this)
+    // ContainerTemplate.onEvent = this.onEvent.bind(this)
   }
 
   /* Component Lifecycle */
@@ -50,13 +51,14 @@ class ContainerTemplate extends Component {
   // ...
 }
 
-const mapStateToProps = (state: Object, router: Object) => {
-  // console.log('ContainerTemplate mapStateToProps:');
-  // console.log('  state: ', state);
-  // console.log('  router: ', router);
+const mapStateToProps = (state: Object, routerContext: RouterContext) => {
+  // console.log('ContainerTemplate mapStateToProps:')
+  // console.log('  state: ', state)
+  // console.log('  routerContext: ', routerContext)
 
   return {
-    // main: state.main
+    // main: state.main,
+    // router: routerContext.router,
   }
 }
 

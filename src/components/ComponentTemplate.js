@@ -23,7 +23,7 @@ class ComponentTemplate extends Component {
     // this.state = {}
 
     // const ComponentTemplate = (this: any)
-    // ComponentTemplate.eventHandler = this.eventHandler.bind(this)
+    // ComponentTemplate.onEvent = this.onEvent.bind(this)
   }
 
   /// Mounting
