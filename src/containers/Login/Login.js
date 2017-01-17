@@ -55,7 +55,7 @@ class Login extends Component {
       <div id="Login">
         <h1>Login</h1>
 
-        <p><Link to="/">🏡</Link></p>
+        <p className="link"><Link to="/">🏡</Link></p>
 
         <p>Member area</p>
 
