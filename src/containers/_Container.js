@@ -15,7 +15,7 @@ type State = {
 }
 
 
-class ContainerTemplate extends Component {
+class _Container extends Component {
   props: Props
   state: State
 
@@ -24,8 +24,8 @@ class ContainerTemplate extends Component {
 
     // this.state = {}
 
-    // const ContainerTemplate = (this: any)
-    // ContainerTemplate.onEvent = this.onEvent.bind(this)
+    // const _Container = (this: any)
+    // _Container.onEvent = this.onEvent.bind(this)
   }
 
   /* Component Lifecycle */
@@ -43,7 +43,7 @@ class ContainerTemplate extends Component {
 
 
   render() {
-    return <div>ContainerTemplate</div>
+    return <div>_Container</div>
   }
 
 
@@ -52,7 +52,7 @@ class ContainerTemplate extends Component {
 }
 
 const mapStateToProps = (state: Object, routerContext: RouterContext) => {
-  // console.log('ContainerTemplate mapStateToProps:')
+  // console.log('_Container mapStateToProps:')
   // console.log('  state: ', state)
   // console.log('  routerContext: ', routerContext)
 
@@ -65,4 +65,4 @@ const mapStateToProps = (state: Object, routerContext: RouterContext) => {
 export default connect(
   mapStateToProps
   // mapDispatchToProps
-)(ContainerTemplate)
+)(_Container)
