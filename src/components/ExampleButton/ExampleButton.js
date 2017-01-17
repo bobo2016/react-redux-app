@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 
 type Props = {
   id: number,
-  onClick: () => void
+  onClick: () => void,
 }
 
 type State = {
@@ -24,7 +24,7 @@ class ExampleButton extends Component {
     // this.state = {}
 
     // const ExampleButton = (this: any)
-    // ExampleButton.eventHandler = this.eventHandler.bind(this)
+    // ExampleButton.onEvent = this.onEvent.bind(this)
   }
 
   /// Mounting
