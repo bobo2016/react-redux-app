@@ -49,14 +49,15 @@ Simply install the npm project dependencies:
 npm install
 ```
 
-### Serve & watch dev
+**Serve & watch**
+
 Serve and watch app _( without hot reloading )_:
 ```
 npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Hot reloading
+**Hot reloading**
 This package also enables hot reloading over `webpack-dev-server`. To serve and watch a _hot_ app, run:
 ```
 npm run hot
@@ -65,11 +66,9 @@ Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-d
 
 **NOTE**: This package doesn't reload Redux state yet (see #6)
 
-### Other
+**NOTE**: There are other scripts too, just have a look at `package.json` and use to your likings.
 
-There are other scripts too, just have a look at `package.json` and use to your benfit.
-
-### DevTools
+## DevTools
 
 Install the Redux developer tools Chrome and Firefox extension – extremely useful:
 
@@ -85,39 +84,25 @@ https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopl
 
 
 ## Styling
-Require `components` and `containers` related stylesheets in your `.js` files like so:
+Require `components` and `containers` related stylesheets in the `index.js` of the respective component/container like so:
 
 ```es6
-require('../stylesheets/containers/App.scss')
-require('../stylesheets/components/Button.scss')
+require('./Button.scss')
 ```
-Using this approach, you have to take care about the order in which you require styles.
+**NOTE**: Using this approach, you have to take care about the order in which you require styles.
 
-Write your SCSS styles in the appropriate subfolders in `stylesheets/` directory.
+Use non-component related SCSS styles in the appropriate subfolders in the `stylesheets/` directory.
 
 ### Base
 The `base/` folder contains boilerplate stuff such as:
 * `reset.scss` or `normalize.scss`
 * `typography.scss`
 
-### Components
-The `components/` folder contains components-specific styles for smaller parts of your app such as:
-* `Button.scss`
-* `List.scss`
-* `forms/ContactForm.scss`
-
-### Containers
-The `containers/` folder contains container-specific styles for major parts of your app such as:
-* `App.scss`
-* `Home.scss`
-* `Contact.scss`
-
 ### Utils
-The `utils/` folder contains global variables, mixins, functions, helper selectors and similar:
-* `variables.scss` or `config.scss`
+The `utils/` folder contains global variables, mixins, helper selectors and similar:
+* `config.scss` or `variables.scss` (recommended)
 * `mixins.scss`
-* `functions.scss`
-* `placeholders.scss` or `helpers.scss`
+* `placeholders.scss` or `helpers.scss` (recommended)
 
 ### Vendors
 The `vendors/` folder contains 3rd-party libraries and frameworks such as:
