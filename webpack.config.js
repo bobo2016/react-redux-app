@@ -52,10 +52,10 @@ module.exports = {
       // dry: false,
       exclude: ['bundle.js']
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: isProduction,
-      // sourceMap: ! isProduction,
-    })
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: isProduction,
+    //   // sourceMap: ! isProduction,
+    // })
   ],
 
   devServer: {
