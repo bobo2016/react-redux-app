@@ -20,7 +20,7 @@ module.exports = {
   output: {
     path: __dirname + '/lib',
     filename: 'bundle.js',
-    publicPath: '/lib/'
+    publicPath: '/lib/',
   },
 
   module: {
@@ -51,6 +51,10 @@ module.exports = {
       // verbose: true,
       // dry: false,
       exclude: ['bundle.js']
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: isProduction,
+      // sourceMap: ! isProduction,
     })
   ],
 
