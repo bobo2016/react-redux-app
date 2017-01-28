@@ -66,7 +66,7 @@ Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-d
 
 ### Notes
 
-**NOTE**: This package doesn't reload the Redux state yet (see #6)
+**NOTE**: This package doesn't reload the Redux state yet (see [#6](https://github.com/LEINWAND/react-redux-app/issues/6))
 
 **NOTE**: There are other scripts too, just have a look at `package.json` and use to your likings.
 
