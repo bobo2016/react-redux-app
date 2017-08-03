@@ -1,26 +1,20 @@
 var webpack = require('webpack')
 var CleanWebpackPlugin = require('clean-webpack-plugin');
+var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 // var path = require('path')
 
-var isProduction = process.env.NODE_ENV === 'production'
 
-
-function entry() {
-  return isProduction ? './src/main.js' : [
+var config = {
+  entry: process.env.NODE_ENV === 'production' ? './src/main.js' : [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     './src/main.js',
-  ]
-}
-
-
-module.exports = {
-  entry: entry(),
+  ],
 
   output: {
     path: __dirname + '/lib',
     filename: 'bundle.js',
-    publicPath: '/lib/',
+    publicPath: '/lib/'
   },
 
   module: {
@@ -33,14 +27,14 @@ module.exports = {
     }, {
       // jtangelder/sass-loader (https://github.com/jtangelder/sass-loader)
       // Usage: https://github.com/jtangelder/sass-loader#usage
-      test: /\.scss$/,
+      test: /(\.scss|\.css)$/,
       loaders: ['style', 'css', 'sass'],
       // loaders: ['style', 'css?sourceMap', 'sass?sourceMap'],
     }]
   },
 
   // resolve: {
-  //   extensions: ['', '.js', '.jsx'],
+  //   extensions: ['', '.js', '.jsx', '.css', '.scss' ],
   // },
 
   plugins: [
@@ -51,21 +45,26 @@ module.exports = {
       // verbose: true,
       // dry: false,
       exclude: ['bundle.js']
-    }),
-    // new webpack.optimize.UglifyJsPlugin({
-    //   compress: isProduction,
-    //   // sourceMap: ! isProduction,
-    // })
+    })
   ],
 
   devServer: {
     hot: true,
     contentBase: './',
   },
-
-
-  /// Todos
-  // TODO: Use The Production Build
-  // https://facebook.github.io/react/docs/optimizing-performance.html#use-the-production-build
-
 }
+
+
+if ( process.env.UGLIFY ) {
+  config.plugins.push( new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+      }
+    })
+  );
+
+  config.plugins.push( new UglifyJSPlugin());
+}
+
+
+module.exports = config;
