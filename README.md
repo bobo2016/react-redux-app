@@ -43,18 +43,19 @@ cp -Rv node_modules/react-redux-app/. .
 mv .npmignore .gitignore
 ```
 
-## Install dependencies
+## Install
 Simply install the npm project dependencies:
 ```
 npm install
 ```
 
-**IMPORTANT:** Windows users have to reconfigure Webpack and install some additional dependencies.
+## Setup (Windows-only)
+Windows users have to reconfigure Webpack and install some additional dependencies.
 
 Special thanks to Cheng for his guidance on this issue. (see [#12](https://github.com/LEINWAND/react-redux-app/issues/12#issuecomment-319654121))
 
 
-### Serve & watch
+## Serve & watch
 
 Serve and watch app _( without hot reloading )_:
 ```
@@ -62,14 +63,14 @@ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Hot reloading
+## Hot reloading
 This package also enables hot reloading over `webpack-dev-server`. To serve and watch a _hot_ app, run:
 ```
 npm run hot
 ```
 Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-dev-server/) in your browser.
 
-### Notes
+## Notes
 
 This package doesn't reload the Redux state yet (see [#6](https://github.com/LEINWAND/react-redux-app/issues/6))
 
@@ -80,16 +81,12 @@ There are other scripts too, just have a look at `package.json` and use to your 
 Install the React and Redux developer tools, which are extremely useful:
 
 ### React
-Check out Facebook's React DevTools Chrome extension:
-
-https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+Check out Facebook's [React DevTools Chrome extension](https://chrome.google.com/webstore/detail/react-developer-tools/)
 
 ### Redux
-Official repository: https://github.com/zalmoxisus/redux-devtools-extension
-
-Chrome: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
-
-Firefox: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
+* [Official repository](https://github.com/zalmoxisus/redux-devtools-extension)
+* [Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/)
+* [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/remotedev/)
 
 
 ## Styling
