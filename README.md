@@ -1,4 +1,4 @@
-# React Redux Template
+# react-redux-app
 
 An opinionated development-ready React-Redux boilerplate that will instantly get you going.
 
@@ -25,14 +25,14 @@ An opinionated development-ready React-Redux boilerplate that will instantly get
 ### Download
 You can either download the latest release `.zip` and simply unzip it in your project directory.
 
-**or**
+### Clone
 
 Clone from git in a desired project directory.
 ```
 git clone https://github.com/LEINWAND/react-redux-app awesome-app
 ```
 
-**or**
+### npm
 
 Alternatively, you can install w/ `npm` and copy the module from `node_modules/`. In this case you'll need to rename `.npmignore` to `.gitignore` after copying.
 
@@ -43,11 +43,15 @@ cp -Rv node_modules/react-redux-app/. .
 mv .npmignore .gitignore
 ```
 
-### Install dependencies
+## Install dependencies
 Simply install the npm project dependencies:
 ```
 npm install
 ```
+
+**IMPORTANT:** Windows users have to reconfigure Webpack and install some additional dependencies. 
+
+Special thanks to [cheng500](https://github.com/cheng500) for [his guidance on this issue](https://github.com/LEINWAND/react-redux-app/issues/12#issuecomment-319654121).
 
 ### Serve & watch
 
@@ -66,23 +70,25 @@ Open [http://localhost:8080/webpack-dev-server/](http://localhost:8080/webpack-d
 
 ### Notes
 
-**NOTE**: This package doesn't reload the Redux state yet (see [#6](https://github.com/LEINWAND/react-redux-app/issues/6))
+This package doesn't reload the Redux state yet (see [#6](https://github.com/LEINWAND/react-redux-app/issues/6))
 
-**NOTE**: There are other scripts too, just have a look at `package.json` and use to your likings.
+There are other scripts too, just have a look at `package.json` and use to your likings.
 
 ## DevTools
 
-Install the Redux developer tools Chrome and Firefox extension – extremely useful:
+Install the React and Redux developer tools, which are extremely useful:
 
-**Official repository**: https://github.com/zalmoxisus/redux-devtools-extension
-
-**Chrome extension**: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
-
-**Firefox extension**: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
-
-You might also find Facebooks React Chrome extension helpful:
+### React
+Check out Facebook's React DevTools Chrome extension:
 
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+### Redux
+Official repository: https://github.com/zalmoxisus/redux-devtools-extension
+
+Chrome: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+Firefox: https://addons.mozilla.org/en-US/firefox/addon/remotedev/
 
 
 ## Styling
