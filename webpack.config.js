@@ -23,13 +23,13 @@ var config = {
       // Troubleshooting: https://github.com/babel/babel-loader#troubleshooting
       test: /\.js(x)?$/,
       exclude: /(node_modules|bower_components)/,
-      loader: 'babel',
+      loader: 'babel-loader',
     }, {
       // jtangelder/sass-loader (https://github.com/jtangelder/sass-loader)
       // Usage: https://github.com/jtangelder/sass-loader#usage
       test: /(\.scss|\.css)$/,
-      loaders: ['style', 'css', 'sass'],
-      // loaders: ['style', 'css?sourceMap', 'sass?sourceMap'],
+      loaders: ['style-loader', 'css-loader', 'sass-loader'],
+      // loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap'],
     }]
   },
 
@@ -45,7 +45,7 @@ var config = {
       // verbose: true,
       // dry: false,
       exclude: ['bundle.js']
-    })
+    }),
   ],
 
   devServer: {
@@ -64,6 +64,7 @@ if ( process.env.UGLIFY ) {
   );
 
   config.plugins.push( new UglifyJSPlugin());
+  config.plugins.push( new webpack.optimize.ModuleConcatenationPlugin());
 }
 
 
