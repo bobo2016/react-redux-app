@@ -5,9 +5,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Link, RouterContext } from 'react-router'
 
-import { exampleAction } from '../actions/main'
+import { exampleAction } from '../redux/main'
 
-import type { Dispatch } from '../actions/types'
+import type { Dispatch } from '../redux/types'
 
 import Credits from '../components/Credits'
 import ExampleButton from '../components/ExampleButton'

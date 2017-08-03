@@ -7,7 +7,7 @@ import thunk from 'redux-thunk'
 import promise from 'redux-promise'
 import createLogger from 'redux-logger'
 
-import reducers from '../reducers'
+import reducers from '../redux'
 
 
 const initialState: ?Object = undefined
@@ -28,8 +28,8 @@ export default function configureStore(state: ?Object = initialState): Object {
   // NOTE: This doesn't seem to work yet !
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
-    (module.hot: any).accept('../reducers', () => {
-      const nextRootReducer = require('../reducers/index');
+    (module.hot: any).accept('../redux', () => {
+      const nextRootReducer = require('../redux/index');
       store.replaceReducer(nextRootReducer);
     });
   }
