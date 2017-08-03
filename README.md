@@ -49,9 +49,10 @@ Simply install the npm project dependencies:
 npm install
 ```
 
-**IMPORTANT:** Windows users have to reconfigure Webpack and install some additional dependencies. 
+**IMPORTANT:** Windows users have to reconfigure Webpack and install some additional dependencies.
 
-Special thanks to [cheng500](https://github.com/cheng500) for [his guidance on this issue](https://github.com/LEINWAND/react-redux-app/issues/12#issuecomment-319654121).
+Special thanks to Cheng for his guidance on this issue. (see [#12](https://github.com/LEINWAND/react-redux-app/issues/12#issuecomment-319654121))
+
 
 ### Serve & watch
 
