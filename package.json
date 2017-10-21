@@ -37,9 +37,9 @@
   ],
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/miclaus/create-react-redux-app/issues"
+    "url": "https://github.com/LEINWAND/react-redux-app/issues"
   },
-  "homepage": "https://github.com/miclaus/create-react-redux-app#readme",
+  "homepage": "https://github.com/LEINWAND/react-redux-app#readme",
   "dependencies": {
     "axios": "^0.15.2",
     "classnames": "^2.2.5",
